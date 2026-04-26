@@ -1,0 +1,61 @@
+name: flutter_portfolio_tracker
+description: Hyperliquid Portfolio Tracker — real-time market and portfolio monitoring.
+publish_to: none
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+
+  # Networking
+  dio: ^5.4.3
+  web_socket_channel: ^3.0.1
+
+  # Routing
+  go_router: ^14.2.0
+
+  # Formatting / i18n
+  intl: ^0.19.0
+
+  # Value equality
+  equatable: ^2.0.5
+
+  # Charts
+  syncfusion_flutter_charts: ^26.2.14
+
+  # Safe list/map helpers
+  collection: ^1.18.0
+
+  # Logging (dev)
+  logger: ^2.3.0
+  flutter_svg: ^2.0.10+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.9
+  riverpod_generator: ^2.4.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/fonts/
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.otf
+          weight: 400
+        - asset: assets/fonts/Inter-Medium.otf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.otf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.otf
+          weight: 700
